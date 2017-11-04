@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-	<title>Patsys Backstreet Barber Shop</title>    
+	<title>Patsy's Backstreet Barber Shop</title>    
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<link rel="stylesheet" href="./css/style.css">
 <body>
-<!-- Navbar (sit on top) -->
+<!-- Navbar (fixed to top) -->
 <div class="w3-top">
   <div class="w3-bar text-color-light" id="myNavbar">
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-left" style="position: relative; z-index: 10; background-color: transparent;" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
@@ -22,7 +22,7 @@
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
   </div>
 
-  <!-- Navbar on small screens -->
+  <!-- Navbar on small screens (Mobile Menu) -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium" style="position: absolute; width: 100%; top: 0; z-index: 0">
     <a href="#home" class="w3-bar-item w3-button" style="text-align: right" onclick="toggleFunction()">HOME</a>
     <a href="#about" class="w3-bar-item w3-button" style="text-align: right" onclick="toggleFunction()">ABOUT</a>
@@ -31,11 +31,10 @@
   </div>
 </div>
 
-<!-- First Parallax Image with Logo Text -->
+<!-- First Background Image & Logo -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle">
-    <!--  <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><span class="w3-hide-small">BARBER </span>SHOP LOGO</span>  -->
-    <img src="./img/patsys-logo.svg" style="height=auto; width=32%" />
+    <img src="./img/patsys-logo.png" style="height=auto; width=32%" />
   </div>
 </div>
 
@@ -53,7 +52,7 @@
       <img src="./img/coffee-station.jpg" class="w3-round w3-image" alt="Photo" width="500" height="auto" style="opacity: 0.93" />
     </div>
 
-    <!-- Hide this text on small devices -->
+    <!-- Hide below text on small screens -->
     <div class="w3-col m6 w3-hide-small w3-padding-large">
       <p>Welcome to the shop website. lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
         dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
@@ -73,7 +72,7 @@
     Children Welcome
   </div>
    <div class="expand-toThirds-small" style="float: left; margin-bottom: 7px; margin-top: 7px">
-    <span class="w3-large ">$7</span><br>
+    <span class="w3-large ">$10</span><br>
     Basic Cuts
   </div>
    <div class="expand-toThirds-small" style="float: left; margin-bottom: 7px; margin-top: 7px">
@@ -82,7 +81,7 @@
   </div>
 </div>
 
-<!-- Second Parallax Image with Text -->
+<!-- Second Background Image -->
 <div class="bgimg-2 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
     <span class="w3-xxlarge w3-text-white w3-wide">Photos</span>
@@ -92,7 +91,7 @@
 <!-- Container Photos -->
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
   <h3 class="w3-center">Great Styles</h3>
-  <p class="w3-center"><em>Here are some of our the latest work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
+  <p class="w3-center"><em>Here's some of our latest work.</em></p><br>
 
   <div class="w3-hide-small w3-row-padding w3-center">
     <div class="w3-col m3">
@@ -128,7 +127,6 @@
     <div class="w3-col m3">
       <img src="626248664.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Haircut">
     </div>
-    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
   </div>
   <!-- Small Screen Image Carousel -->
   <div class="w3-hide-medium w3-hide-large w3-row-padding w3-center w3-section">
@@ -160,7 +158,7 @@
     </div>
   </div>
 </div>
-<!-- Modal for full size images on click-->
+<!-- Image Modal - onClick -->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
   <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
   <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
@@ -169,7 +167,7 @@
   </div>
 </div>
 
-<!-- Third Parallax Image with Text -->
+<!-- Third Background Image -->
 <div class="bgimg-3 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
      <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
@@ -178,47 +176,33 @@
 
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">Stop By Today!</h3>
-
+	<h4 class="w3-center" style="margin-left:0.75rem"><u>Stop by today!</u></h4>
   <div class="w3-row w3-section">
-    <div class="w3-col m4 w3-container"></div>    
-    <div class="w3-col m8 w3-panel">
-      <p class="w3-margin-left">
-      	<b><i class="fa fa-user w3-margin-right"></i>
-      		Backsteet Barber Shop
-      	</b></p>
-      <div class="w3-large">
-      <!-- Add Google Maps  -->
-      <!-- TODO: Make openDirectionWindow Function  -->
-	    <div id="map" onclick="alert('TODO: openDirectionWindow()')"></div>
-	    <script>
-			var map;
-			var loc = {lat: 28.453089, lng: -82.592903};
-			function initMap() {
-				map = new google.maps.Map(document.getElementById('map'), {
-				  center: loc,
-				  zoom: 14
-				});
-				var marker = new google.maps.Marker({
-				  position: loc,
-				  map: map
-				});
-			}
-	    </script>
-	    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDRoEVQlaKN4PV8YlAJiT2A2LtuiIxMJg&callback=initMap" async defer></script>
 
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>1406 Kass Circle, Spring Hill, FL 34606<br />
+    <div class="w3-col m4 w3-container" style="margin-left: -5rem;"></div> 
+    <div class="w3-col m8 w3-container">
+      <div class="w3-large">
+      	<br />
+      	<b style="margin-left: 1.5rem;"><i class="fa fa-user w3-margin-right"></i>
+      		Patsy's Backsteet Barber Shop
+      	</b>
+      	<br /><br />
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.8744886927675!2d-82.59442778492145!3d28.453199682488894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c29fc6656f311d%3A0xeeca566c22520377!2s1406+Kass+Cir%2C+Spring+Hill%2C+FL+34606!5e0!3m2!1sen!2sus!4v1509834604937" width="350px" height="350px" frameborder="0" style="border:0;" allowfullscreen></iframe>
+      	<br />
+
+
+
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>1406 Kass Circle, Spring Hill, FL <span class="w3-hide-small">34606</span><br />
         <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>(352) 684-1181<br />
         <i class="fa fa-clock-o fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> 
-	      <ul style="display:inline-block">
+	      <ul style="margin-top: -2rem; margin-left: 1.5rem;">
 		      <small>
 			      <li>Mon. - Thurs. (8am-5pm)</li>
 	      		      <li>Fri. (8am-4pm)</li>
 			      <li>Sat. - Sun (Closed)</li>
 			</small>
 		</ul>
-	<br />
-        <em style="margin: 0; margin-left: 3em"><u><small>We'd love your feedback!</u></small></em>
+        <em style="margin: 0; margin-left: 5em"><u><small>We'd love your feedback!</u></small></em>
       </div>
     </div>
   </div>  
@@ -226,14 +210,9 @@
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-48 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Back to the top</a>
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Back to top</a>
   <div class="w3-xlarge w3-section">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
   </div>
   <kbd>Designed by: Adam Sullivan</kbd>
 </footer>
