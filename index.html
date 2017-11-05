@@ -18,7 +18,7 @@
     </a>
     <a href="#home" class="w3-bar-item w3-button w3-hide-small">HOME</a>
     <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PHOTOS</a>
+    <a href="#photos" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PHOTOS</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
   </div>
 
@@ -26,7 +26,7 @@
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium" style="position: absolute; width: 100%; top: 0; z-index: 0">
     <a href="#home" class="w3-bar-item w3-button" style="text-align: right" onclick="toggleFunction()">HOME</a>
     <a href="#about" class="w3-bar-item w3-button" style="text-align: right" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" style="text-align: right" onclick="toggleFunction()">PHOTOS</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="text-align: right" onclick="toggleFunction()">PHOTOS</a>
     <a href="#contact" class="w3-bar-item w3-button" style="text-align: right" onclick="toggleFunction()">CONTACT</a>
   </div>
 </div>
@@ -89,7 +89,7 @@
 </div>
 
 <!-- Container Photos -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
+<div class="w3-content w3-container" style="padding-top: 64px;padding-bottom:120px;" id="photos">
   <h3 class="w3-center">Great Styles</h3>
   <p class="w3-center"><em>Here's some of our latest work.</em></p><br>
 
@@ -128,8 +128,6 @@
       <img src="626248664.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Haircut">
     </div>
   </div>
-<br />
-<br />
   <!-- Small Screen Image Carousel -->
   <div class="w3-hide-medium w3-hide-large w3-row-padding w3-center w3-section">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -177,19 +175,18 @@
 </div>
 
 <!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
-	<h4 class="w3-center" style="margin-left:0.75rem"><u>Stop by today!</u></h4>
+<div class="w3-content w3-container" style="padding-top: 64px; padding-bottom: 28px;" id="contact">
   <div class="w3-row w3-section">
 
-    <div class="w3-col m4 w3-container" style="margin-left: -5rem;"></div> 
+    <div class="w3-col m4 w3-container" style="margin-left: -3rem"></div> 
     <div class="w3-col m8 w3-container">
+	<h4 style="margin-left: 7.6rem; margin-top: -2rem;"><u>Stop by today!</u></h4><br />
       <div class="w3-large">
-      	<br />
-      	<b style="margin-left: 1.5rem;"><i class="fa fa-user w3-margin-right"></i>
+      	<b style="margin-left: 2rem;"><i class="fa fa-user w3-margin-right"></i>
       		Patsy's Backsteet Barber Shop
       	</b>
       	<br /><br />
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.8744886927675!2d-82.59442778492145!3d28.453199682488894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c29fc6656f311d%3A0xeeca566c22520377!2s1406+Kass+Cir%2C+Spring+Hill%2C+FL+34606!5e0!3m2!1sen!2sus!4v1509834604937" width="350px" height="350px" frameborder="0" style="border:0;" allowfullscreen></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.8715193313355!2d-82.59561468541646!3d28.45328918248889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c29fc66ba7852b%3A0x54a3dd1a221e8b22!2sPat&#39;s+Barber+%26+Style+Salon!5e0!3m2!1sen!2sus!4v1509853627359" width="350px" height="350px" frameborder="0" style="border:0;" allowfullscreen></iframe>
       	<br />
 
 
@@ -216,7 +213,7 @@
   <div class="w3-xlarge w3-section">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
   </div>
-  <kbd>Designed by: Adam Sullivan</kbd>
+  <small><kbd>Visit us on Facebook!</kbd></small>
 </footer>
  
 <script src="./js/script.js"></script>	
