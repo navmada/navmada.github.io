@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Patsy's Backstreet Barber Shop</title>    
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/style.css">
+<body>
+<!-- Navbar (fixed to top) -->
+<div class="w3-top">
+  <div class="w3-bar text-color-light" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-left" style="position: relative; z-index: 10; background-color: transparent;" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars" style="font-size: 1.38rem; padding-right: 4px;"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button w3-hide-small">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+  </div>
+
+  <!-- Navbar on small screens (Mobile Menu) -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium" style="position: absolute; width: 100%; top: 0; z-index: 0">
+    <a href="#home" class="w3-bar-item w3-button" style="text-align: right" onclick="toggleFunction()">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="text-align: right" onclick="toggleFunction()">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="text-align: right" onclick="toggleFunction()">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="text-align: right" onclick="toggleFunction()">CONTACT</a>
+  </div>
+</div>
+
+<!-- Initial Background Image & Logo -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle">
+    <img src="./img/patsys-logo.png" style="height=auto; width=32%" />
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT</h3>
+	<br />
+  <p class="w3-center"><em>Welcome to one of Spring Hill's original barbershops!</em></p>
+  <p class="w3-center">This location has been the home to talented local barber's since 1978.</p><p class="w3-center">Under second ownership for 13 years, we have services for men, women, as well as children.</p><p class="w3-center">Always have been, and continuing to, keeping Spring Hill looking good!</p>
+  <br />
+  <hr class="w3-hide-small" />
+  <p class="w3-center w3-hide-small"><b><em>Pricing</em></b></p>
+  <div class="w3-row">
+    <!-- Hide below text -> img on small screens -->
+    <div class="w3-col m6 w3-padding-large">
+     <i class="fa fa-angle-right" style="display:inline"></i><p style="display:inline; margin-left:0.62em">Swing by for a cup of <i class="fa fa-coffee"></i><u> and a trim!</u></p>
+      
+      <img src="./img/coffee-station.jpg" class="w3-round w3-image" alt="Photo" width="500" height="auto" style="opacity: 0.93" />
+    </div>
+
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <div class="container" style="padding-top: 1.6rem; padding-left: 25%">
+	      <ul style="text-align: left">
+	      	<li>All Cuts: $10 <small>(Men, Women, Children)</small></li>
+	      	<li>Mens Shave: $13</li>
+	      	<li>Beard Trim: $3</li>
+	      	<li>Waxing (Lip, Eyebrow, Chin): $5 <small>(each)</small></li>
+	      	<u style="margin-left: -1rem">(The following require an appointment)</u>
+	      	<li>Coloring: $30</li>
+	      	<li>
+		      	Highlights:
+		      	<ul><li>Cap: $35+</li><li>Foils: $50+</li></ul>
+		    </li>
+	      	<li>Perm: $40</li>
+	      	<li>Shampoo, Cut, and Blow Dry: $20</li>
+	      </ul>
+	  </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+   <div class="expand-toThirds-small" style="float: left; margin-bottom: 7px; margin-top: 7px">
+    <span class="w3-large">40+</span><br>
+    Years In Business
+  </div>
+  <div class="w3-hide-small" style="float: left; width: 24.99%; margin-bottom: 7px; margin-top: 7px">
+    <span class="w3-large ">$10</span><br>
+    Basic Cuts
+  </div>
+   <div class="expand-toThirds-small" style="float: left; margin-bottom: 7px; margin-top: 7px">
+   	<span class="w3-large">100%</span><br>
+    Happy Clients
+  </div>
+   <div class="expand-toThirds-small" style="float: left; margin-bottom: 7px; margin-top: 7px">
+    Men, Women, and <br /> Children Welcome!
+  </div>
+</div>
+
+<!-- Second Background Image 
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">Photos</span>
+  </div>
+</div>
+-->
+<!-- Container Photos -->
+<div class="w3-content w3-container" style="padding-top: 52px;padding-bottom:120px;" id="photos">
+  <h3 class="w3-center">Great Styles</h3>
+  <p class="w3-center"><em>Here's some of our latest work.</em></p><br>
+
+  <div class="w3-hide-small w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="./img/img_haircut-1.png" style="width:100%" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="./img/img_haircut-2.png" style="width:100%" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="./img/img_haircut-3.png" style="width:100%" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="./img/img_haircut-4.png" style="width:100%" class="w3-hover-opacity">
+    </div>
+  </div>
+
+  <div class="w3-hide-small w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="./img/img_haircut-5.png" style="width:100%" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="./img/img_haircut-6.png" style="width:100%" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="./img/img_haircut-7.png" style="width:100%" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="./img/img_haircut-8.png" style="width:100%" class="w3-hover-opacity">
+    </div>
+  </div>
+  <!-- Small Screen Image Carousel -->
+  <div class="w3-hide-medium w3-hide-large w3-row-padding w3-center w3-section" style="max-width: 300px; max-height: 300px; margin: auto;">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <img src="./img/img_haircut-1.png" style="width:100%" class="d-block img-fluid">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/img_haircut-2.png" style="width:100%" class="d-block img-fluid">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/img_haircut-3.png" style="width:100%" class="d-block img-fluid">
+        </div>        
+        <div class="carousel-item">
+          <img src="./img/img_haircut-4.png" style="width:100%" class="d-block img-fluid">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+</div>
+<!-- Image Modal - onClick -->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Background Image 
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-center" style="margin-top: -5rem; padding-bottom: 16px;" id="contact">
+  <div class="w3-row w3-section">
+
+    <div class="w3-col w3-container">
+	<h4 style="margin-top: -2rem;"><u>Stop by today!</u></h4><br />
+      <div class="w3-large">
+      	<b><i class="fa fa-user"></i>
+      		Patsy's Backsteet Barber Shop
+      		<br />
+      		<small>
+      			<em>(Down the street from Saint Vincent De Paul)</em>
+      		</small>
+      	</b>
+      	<br /><br />
+      <iframe src="https://www.google.com/maps/embed/v1/place?q=pats%20backstreet%20barbershop%2034606&key=AIzaSyDiUsHX4nzIW59zKlgG5WUiYe1v7d7spSk&zoom=18" width="100%" height="350px" frameborder="0" style="border:0; max-width:500px; margin-bottom: 1rem" allowfullscreen></iframe>
+      	<br />
+
+
+
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge"></i>1406 Kass Circle, Spring Hill, FL <span class="w3-hide-small">34606</span><br />
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge" style="margin-left: -1rem;">
+        	
+        </i>(352) 684-1181<br /><br />
+        <ul style="margin-top: -2rem; margin-left: -2rem;">
+		      <small>
+			      <li>Mon. - Thurs. (8am-5pm)</li>
+	      		  <li>Fri. (8am-4pm)</li>
+			      <li>Sat. (8am-2pm)</li>
+			      <li>Sun. (Closed)</li>
+			</small>
+		</ul>
+        <em><u><small>We love seeing you looking good!</u></small></em>
+      </div>
+    </div>
+  </div>  
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Back to top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/Patsys-Backstreet-Barber-Shop-Style-Salon-143320399034279"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+  </div>
+  <small><kbd>Visit us on Facebook!</kbd></small>
+</footer>
+ 
+<script src="./js/script.js"></script>	
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="./js/SmoothScroll.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<!-- IE10 viewport fix for Surface/desktop Windows 8 bug -->
+<script src="./js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

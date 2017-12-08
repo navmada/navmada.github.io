@@ -1,0 +1,48 @@
+body {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Parallax */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image */
+.bgimg-1 {
+    background-image: url('../img/shop-span.jpg');
+    min-height: 100%;
+}
+
+/* Second image 
+.bgimg-2 {
+    background-image: url("../img/patsys-etched.jpg");
+    min-height: 400px;
+}
+
+/* Third image 
+.bgimg-3 {
+    background-image: url("../img/patsys-billboard.jpg");
+    min-height: 400px;
+}
+*/
+#map { margin-bottom: 1rem; }
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+.w3-animate-opacity{animation:opac 0.62s}@keyframes opac{from{opacity:0} to{opacity:1}}
+
+.text-color-light a { color: rgba(255, 255, 255, 0.68); text-shadow: 0 2px 3px #333;}
+
+
+@media (min-width: 601px){
+	.expand-toThirds-small { width: 24.99%; }
+}
+@media (max-width: 600px) {
+	 .expand-toThirds-small { width: 33.32%; }
+}
